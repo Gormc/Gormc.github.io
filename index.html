@@ -6,16 +6,50 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"> </script>
     </head>
-    <body>
-        <h1 align = "center" > Здравствуйте </h1>
-        <p>Нахождение минимального числа</p>
-        <input type="text" id="a" placeholder="Введите первое число">
+    <body bgcolor="#FFFACD">
+        <h1 align = "center" > Добро пожаловать! </h1>
+        Создатель страницы: Сенин Егор, АДБ 18-07.Приятного просмотра!
+        <h2>Нахождение минимального числа</h2>
+        <form name="form1">
+        <p> A = <input type="text" name="A" size="4" placeholder="Input A"></p>
+        <p> B = <input type="text" name="B" size="4" placeholder="Input B"></p>
+                <input type="button" value="Cчитать!" onClick="Min()" />
+        <h3>Вывод = <output type="text" name="x1" size="20"></h3>
         <br>
-        <br>
-        <input type="text" id="b" placeholder="Введите второе число">
-        <br>
-        <br>
-        <input type = "button" id="btn" value = "Минимум" onclick = min()>
-    </body>
+        </form>
     
+        <form name="form2">
+            <h2>Кто тут админ?</h2>
+            <p> Админ тут <input type="text" name="adm" size="10" placeholder="Имя администр."> (Подсказка:Имя)</p>
+            <input type="button" value="Узнать" onClick="admin()">
+            <h3>Да, это <output type="text" name="name" size="10"></h3>
+        </form>
+
+        <form name ="form3">
+            <h2>Сколько вам лет? </h2>
+            <p> Введите возраст <input type="text" name="ag" size="10"></p>
+            <input type="button" value="Принять" onClick="age()">
+        </form>
+
+        <h2>Немного обо мне</h2>
+       
+        <center><img src="https://media1.giphy.com/media/10FwycrnAkpshW/giphy.gif" alt="я джифка">
+            <br>
+           ФИО:Сенин Егор Романович<br>
+           Возраст:20 лет<br>
+           Пол: <p1>Крепкий</p1> Мужской<br>
+           Город: Переславль-Залесский<br>
+           Телефон: 8-906-***-**-**<br>
+        </center>
+        <form name ="form4">
+            <center><h2>Расскажите о вас?</h2>
+        <p> Как вас зовут? <input type="text" name="q" size="10" placeholder="ФИО" required></p>
+        <input type="checkbox" id="one" onClick="fun1()"> - Студент
+        <p> В каком городе вы живёте? <input type="text" name="w" size="10" placeholder="Город"required></p>
+        <p> Сколько вам лет? <input type="number" name="e" size="10" placeholder="Возраст"required min="1" max = "100"></p>
+        <p> Введите вашу электронную почту <input type="email" name="r" size="10" placeholder="@mail"required></p>
+        <p> Введите ваш номер телефона <input type="text" name="t" size="10" placeholder="Номер"required></p>
+        <input type="submit" value="Принять">    <input type="button" value="Отправить на сервер" onClick="conf()">
+    </center>
+        </form>
 </html>
